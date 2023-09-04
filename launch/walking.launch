@@ -1,0 +1,6 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find pdw_sim)/rviz/biped.rviz" required="true"/>
+    <rosparam file="$(find pdw_sim)/param/biped.yaml" command="load"/>
+    <node pkg="pdw_sim" type="walker" name="walker" output="screen"/>
+    <node pkg="pdw_sim" type="plot" name="plot" output="screen"/>
+</launch>
