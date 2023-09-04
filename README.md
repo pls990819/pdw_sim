@@ -1,2 +1,2 @@
 # pdw_sim
-Simulation of Passive Dynamic Walking
+roslaunch pdw_sim walking.launch
